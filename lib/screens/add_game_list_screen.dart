@@ -43,8 +43,9 @@ class _AddGameListScreenState extends State<AddGameListScreen> {
                           final item = listOfItems[index];
 
                           return ListTile(
-                              leading: snapshot.data![index].cover,
+                              leading: item.buildLeading(context),
                               title: item.buildTitle(context),
+                              subtitle: item.buildSubtitle(context),
                               onTap: () => Navigator.push(context,
                                       MaterialPageRoute(builder: (context) {
                                     return game_page();

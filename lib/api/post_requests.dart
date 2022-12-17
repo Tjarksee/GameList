@@ -59,7 +59,7 @@ Future<List<GameInfo>> getGameInfo(token1, search) async {
       name: "",
       cover: Image.asset(''),
     );
-    createdGame.cover = Image.network("https:$mapCovers['url']");
+    createdGame.cover = Image.network('https:' + mapCovers['url']);
     createdGame.name = mapNames['name'];
     createdGame.gameID = mapNames['id'].toString();
     gameNames.add(createdGame);
