@@ -24,7 +24,6 @@ Future<List<GameInfo>> getGameInfo(token1, search) async {
     throw Exception('No Games Found');
   }
   String id = '';
-
   for (var i = 0; i < ids.length; i++) {
     var map = HashMap.from(ids[i]);
     map.forEach((key, value) {
@@ -50,19 +49,24 @@ Future<List<GameInfo>> getGameInfo(token1, search) async {
       body: ('fields name; where id = ($id);'));
   gameNames.clear();
   gameNamesTemp = jsonDecode(response.body);
+  print(gameCoverTemp.length);
+  print(gameNamesTemp.length);
   for (var i = 0; i < gameNamesTemp.length; i++) {
-    var mapNames = HashMap.from(gameNamesTemp[i]);
-    var mapCovers = HashMap.from(gameCoverTemp[i]);
-
     GameInfo createdGame = GameInfo(
       gameID: '',
       name: "",
-      cover: Image.asset(''),
+      cover: Image.asset('assets/images/test.jpg'),
     );
-    createdGame.cover = Image.network('https:' + mapCovers['url']);
+    var mapNames = HashMap.from(gameNamesTemp[i]);
+    if (i < gameCoverTemp.length) {
+      var mapCovers = HashMap.from(gameCoverTemp[i]);
+      createdGame.cover = Image.network('https:' + mapCovers['url']);
+    }
+
     createdGame.name = mapNames['name'];
     createdGame.gameID = mapNames['id'].toString();
     gameNames.add(createdGame);
+    print(gameNames.length);
   }
 
   return gameNames;

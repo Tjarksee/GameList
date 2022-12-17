@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:game_list/list/list_class.dart';
+import 'package:game_list/list/main_list.dart';
 import 'package:game_list/screens/addGame_screen.dart';
 import 'package:game_list/screens/game_class.dart';
 import 'package:game_list/screens/game_page.dart';
@@ -14,36 +16,29 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
-
+  MainList favedList1 = MainList();
   void changeIndex(int newIndex) {
     setState(() => _selectedIndex = newIndex);
   }
 
-  final List<List<GameInfo>> _MainLists = [
-    [testGame1, testGame2],
-    [testGame1, testGame2],
-    [testGame1, testGame2]
-  ];
+  List<List<GameItem>> mainLists = [[], [], []];
+
+  update(favList) {
+    MainList items = favList;
+    mainLists[0] = items.favList;
+  }
 
   Widget _buildMainList() {
+    update(favedList1);
     return ListView.builder(
-      itemCount: _MainLists[_selectedIndex].length,
+      itemCount: mainLists[_selectedIndex].length,
       itemBuilder: (BuildContext content, int index) {
-        Image cover = _MainLists[_selectedIndex][index].cover;
-        String gameName = _MainLists[_selectedIndex][index].name;
-        String platform = _MainLists[_selectedIndex][index].platform;
         return Container(
           color: Colors.grey,
           child: ListTile(
-              leading: cover,
-              title: Text(
-                '$gameName',
-                style: TextStyle(fontSize: 24.0),
-                textAlign: TextAlign.center,
-              ),
-              subtitle: Text('$platform',
-                  style: TextStyle(fontSize: 15.0),
-                  textAlign: TextAlign.center),
+              leading: mainLists[_selectedIndex][index].buildLeading(context),
+              title: mainLists[_selectedIndex][index].buildTitle(context),
+              subtitle: mainLists[_selectedIndex][index].buildSubtitle(context),
               trailing: Icon(Icons.chevron_right),
               onTap: () =>
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -75,9 +70,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     IconButton(
                         onPressed: () {
                           Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const AddGameScreen()));
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          AddGameScreen(favList: favedList1)))
+                              .then((_) {
+                            setState(() {});
+                          });
                         },
                         icon: Icon(Icons.search)),
                     IconButton(

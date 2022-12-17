@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:game_list/api/post_requests.dart';
+import 'package:game_list/list/list_class.dart';
+import 'package:game_list/list/main_list.dart';
 import 'package:game_list/screens/add_game_list_screen.dart';
 import 'package:game_list/screens/game_class.dart';
 import 'package:game_list/widged_recycler/widged_reycler.dart';
@@ -7,7 +9,9 @@ import 'package:game_list/widged_recycler/widged_reycler.dart';
 import '../api/igdb_token.dart';
 
 class AddGameScreen extends StatefulWidget {
-  const AddGameScreen({super.key});
+  final MainList favList;
+
+  const AddGameScreen({super.key, required this.favList});
 
   @override
   State<AddGameScreen> createState() => _AddGameScreenState();
@@ -21,6 +25,7 @@ class _AddGameScreenState extends State<AddGameScreen> {
     token = fetchIGDBToken();
   }
 
+  late MainList favedList1 = widget.favList;
   @override
   Widget build(BuildContext context) {
     TextEditingController _searchInfo = TextEditingController();
@@ -71,7 +76,8 @@ class _AddGameScreenState extends State<AddGameScreen> {
                                         MaterialPageRoute(
                                             builder: (context) =>
                                                 AddGameListScreen(
-                                                    gameList: gameList1)));
+                                                    gameList: gameList1,
+                                                    favList: favedList1)));
                                   })
                                 ]))));
                   } else if (snapshot.hasError) {
