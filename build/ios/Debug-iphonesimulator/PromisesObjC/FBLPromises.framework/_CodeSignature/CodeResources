@@ -4,69 +4,141 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/FBLPromise 2.h</key>
+		<data>
+		66aJuIe5lIRcT8lc2CR4XlzUCqA=
+		</data>
+		<key>Headers/FBLPromise+All 2.h</key>
+		<data>
+		1/HWSa9B9CfE+6oTjy3jrp1Dbng=
+		</data>
 		<key>Headers/FBLPromise+All.h</key>
 		<data>
 		1/HWSa9B9CfE+6oTjy3jrp1Dbng=
+		</data>
+		<key>Headers/FBLPromise+Always 2.h</key>
+		<data>
+		sVZckdpNp0YMZno6+IaJ16Zal00=
 		</data>
 		<key>Headers/FBLPromise+Always.h</key>
 		<data>
 		sVZckdpNp0YMZno6+IaJ16Zal00=
 		</data>
+		<key>Headers/FBLPromise+Any 2.h</key>
+		<data>
+		jYWCdqjloLKNtDe+sIQ4PyQsf0I=
+		</data>
 		<key>Headers/FBLPromise+Any.h</key>
 		<data>
 		jYWCdqjloLKNtDe+sIQ4PyQsf0I=
+		</data>
+		<key>Headers/FBLPromise+Async 2.h</key>
+		<data>
+		gIl6GZ+2tBZw7sNlHmw6tQggHn4=
 		</data>
 		<key>Headers/FBLPromise+Async.h</key>
 		<data>
 		gIl6GZ+2tBZw7sNlHmw6tQggHn4=
 		</data>
+		<key>Headers/FBLPromise+Await 2.h</key>
+		<data>
+		WKlBKfPKetJ8or+tZtW13HAGcaM=
+		</data>
 		<key>Headers/FBLPromise+Await.h</key>
 		<data>
 		WKlBKfPKetJ8or+tZtW13HAGcaM=
+		</data>
+		<key>Headers/FBLPromise+Catch 2.h</key>
+		<data>
+		WaTiqwvv8w13vIKlm2K4DAgZulo=
 		</data>
 		<key>Headers/FBLPromise+Catch.h</key>
 		<data>
 		WaTiqwvv8w13vIKlm2K4DAgZulo=
 		</data>
+		<key>Headers/FBLPromise+Delay 2.h</key>
+		<data>
+		qoQSMY2FcD2SV3kKq34NITtbdmk=
+		</data>
 		<key>Headers/FBLPromise+Delay.h</key>
 		<data>
 		qoQSMY2FcD2SV3kKq34NITtbdmk=
+		</data>
+		<key>Headers/FBLPromise+Do 2.h</key>
+		<data>
+		ggkiDySeq8jvunvZvPkZ/Kkn8xU=
 		</data>
 		<key>Headers/FBLPromise+Do.h</key>
 		<data>
 		ggkiDySeq8jvunvZvPkZ/Kkn8xU=
 		</data>
+		<key>Headers/FBLPromise+Race 2.h</key>
+		<data>
+		KhU7Y/hu/++OhV8HrTR0blCqsa8=
+		</data>
 		<key>Headers/FBLPromise+Race.h</key>
 		<data>
 		KhU7Y/hu/++OhV8HrTR0blCqsa8=
+		</data>
+		<key>Headers/FBLPromise+Recover 2.h</key>
+		<data>
+		bQIMfszj33smHtitYuadQj5unrM=
 		</data>
 		<key>Headers/FBLPromise+Recover.h</key>
 		<data>
 		bQIMfszj33smHtitYuadQj5unrM=
 		</data>
+		<key>Headers/FBLPromise+Reduce 2.h</key>
+		<data>
+		fHvVgIVNfukW8aWkuQb9Upl1Hv8=
+		</data>
 		<key>Headers/FBLPromise+Reduce.h</key>
 		<data>
 		fHvVgIVNfukW8aWkuQb9Upl1Hv8=
+		</data>
+		<key>Headers/FBLPromise+Retry 3.h</key>
+		<data>
+		yWcTgblFfFp1WTKDOiSPZ5jDxNQ=
 		</data>
 		<key>Headers/FBLPromise+Retry.h</key>
 		<data>
 		yWcTgblFfFp1WTKDOiSPZ5jDxNQ=
 		</data>
+		<key>Headers/FBLPromise+Testing 2.h</key>
+		<data>
+		Ks+FXD691hFVSvDw/g/0x4ic7+0=
+		</data>
 		<key>Headers/FBLPromise+Testing.h</key>
 		<data>
 		Ks+FXD691hFVSvDw/g/0x4ic7+0=
+		</data>
+		<key>Headers/FBLPromise+Then 2.h</key>
+		<data>
+		xXwhWUcFcLdpUBrK28dob5PeMRI=
 		</data>
 		<key>Headers/FBLPromise+Then.h</key>
 		<data>
 		xXwhWUcFcLdpUBrK28dob5PeMRI=
 		</data>
+		<key>Headers/FBLPromise+Timeout 2.h</key>
+		<data>
+		yngMore1DA762uLfNvM0zRhL/u0=
+		</data>
 		<key>Headers/FBLPromise+Timeout.h</key>
 		<data>
 		yngMore1DA762uLfNvM0zRhL/u0=
 		</data>
+		<key>Headers/FBLPromise+Validate 2.h</key>
+		<data>
+		QXCa+SPD+GyNt+fKriUFP4JLYi0=
+		</data>
 		<key>Headers/FBLPromise+Validate.h</key>
 		<data>
 		QXCa+SPD+GyNt+fKriUFP4JLYi0=
+		</data>
+		<key>Headers/FBLPromise+Wrap 3.h</key>
+		<data>
+		pnbKEVv3KohF9zBVmwpY92K1/H8=
 		</data>
 		<key>Headers/FBLPromise+Wrap.h</key>
 		<data>
@@ -76,9 +148,21 @@
 		<data>
 		66aJuIe5lIRcT8lc2CR4XlzUCqA=
 		</data>
+		<key>Headers/FBLPromiseError 2.h</key>
+		<data>
+		NiD1rwNDO7Tz69bYyOj9qmlCGRQ=
+		</data>
 		<key>Headers/FBLPromiseError.h</key>
 		<data>
 		NiD1rwNDO7Tz69bYyOj9qmlCGRQ=
+		</data>
+		<key>Headers/FBLPromisePrivate 2.h</key>
+		<data>
+		J7AOJnwCKzdcaI5lsMAhXoByoT0=
+		</data>
+		<key>Headers/FBLPromises 2.h</key>
+		<data>
+		xmHnPqDlpJpUbAqgOJw5Da3418U=
 		</data>
 		<key>Headers/FBLPromises.h</key>
 		<data>
@@ -103,6 +187,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/FBLPromise 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			66aJuIe5lIRcT8lc2CR4XlzUCqA=
+			</data>
+			<key>hash2</key>
+			<data>
+			MD1VrgE/xaO9Oy+HbINsjj3NdgjHGD0vqLUkZ9TEkgQ=
+			</data>
+		</dict>
+		<key>Headers/FBLPromise+All 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1/HWSa9B9CfE+6oTjy3jrp1Dbng=
+			</data>
+			<key>hash2</key>
+			<data>
+			g6BUKLMTJAGRI/4XjGU/dZaG7rA27W16VZK8WvM1eYs=
+			</data>
+		</dict>
 		<key>Headers/FBLPromise+All.h</key>
 		<dict>
 			<key>hash</key>
@@ -112,6 +218,17 @@
 			<key>hash2</key>
 			<data>
 			g6BUKLMTJAGRI/4XjGU/dZaG7rA27W16VZK8WvM1eYs=
+			</data>
+		</dict>
+		<key>Headers/FBLPromise+Always 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sVZckdpNp0YMZno6+IaJ16Zal00=
+			</data>
+			<key>hash2</key>
+			<data>
+			mSLLqLIfLaAdISUzmCnHE5dI5q5afctdua9s4Ddwrw4=
 			</data>
 		</dict>
 		<key>Headers/FBLPromise+Always.h</key>
@@ -125,6 +242,17 @@
 			mSLLqLIfLaAdISUzmCnHE5dI5q5afctdua9s4Ddwrw4=
 			</data>
 		</dict>
+		<key>Headers/FBLPromise+Any 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jYWCdqjloLKNtDe+sIQ4PyQsf0I=
+			</data>
+			<key>hash2</key>
+			<data>
+			ETMK2COV+ajlfA4XxDUUJzV3p8LUaA+GN9sRLwNE0Ck=
+			</data>
+		</dict>
 		<key>Headers/FBLPromise+Any.h</key>
 		<dict>
 			<key>hash</key>
@@ -134,6 +262,17 @@
 			<key>hash2</key>
 			<data>
 			ETMK2COV+ajlfA4XxDUUJzV3p8LUaA+GN9sRLwNE0Ck=
+			</data>
+		</dict>
+		<key>Headers/FBLPromise+Async 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gIl6GZ+2tBZw7sNlHmw6tQggHn4=
+			</data>
+			<key>hash2</key>
+			<data>
+			dHc8ASbXmQxrkpQCBEbAZL4HTgO6J7gNiv9erzu92QU=
 			</data>
 		</dict>
 		<key>Headers/FBLPromise+Async.h</key>
@@ -147,6 +286,17 @@
 			dHc8ASbXmQxrkpQCBEbAZL4HTgO6J7gNiv9erzu92QU=
 			</data>
 		</dict>
+		<key>Headers/FBLPromise+Await 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WKlBKfPKetJ8or+tZtW13HAGcaM=
+			</data>
+			<key>hash2</key>
+			<data>
+			W7kqZbC71TD1Xv9wdtMIjoDbYSZ5ktUSkok5tPZS5A8=
+			</data>
+		</dict>
 		<key>Headers/FBLPromise+Await.h</key>
 		<dict>
 			<key>hash</key>
@@ -156,6 +306,17 @@
 			<key>hash2</key>
 			<data>
 			W7kqZbC71TD1Xv9wdtMIjoDbYSZ5ktUSkok5tPZS5A8=
+			</data>
+		</dict>
+		<key>Headers/FBLPromise+Catch 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WaTiqwvv8w13vIKlm2K4DAgZulo=
+			</data>
+			<key>hash2</key>
+			<data>
+			kwyC7vU/6AZticiALUlN0j/nrmzG7QFExjjBV25pQTY=
 			</data>
 		</dict>
 		<key>Headers/FBLPromise+Catch.h</key>
@@ -169,6 +330,17 @@
 			kwyC7vU/6AZticiALUlN0j/nrmzG7QFExjjBV25pQTY=
 			</data>
 		</dict>
+		<key>Headers/FBLPromise+Delay 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qoQSMY2FcD2SV3kKq34NITtbdmk=
+			</data>
+			<key>hash2</key>
+			<data>
+			nSl7wEJQ+tww5d/BWlnoA4Mv9wde0pDI2SJaPISo3vI=
+			</data>
+		</dict>
 		<key>Headers/FBLPromise+Delay.h</key>
 		<dict>
 			<key>hash</key>
@@ -178,6 +350,17 @@
 			<key>hash2</key>
 			<data>
 			nSl7wEJQ+tww5d/BWlnoA4Mv9wde0pDI2SJaPISo3vI=
+			</data>
+		</dict>
+		<key>Headers/FBLPromise+Do 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ggkiDySeq8jvunvZvPkZ/Kkn8xU=
+			</data>
+			<key>hash2</key>
+			<data>
+			AbrMui/y3jBRVXloC2ek4ZcwpBQPlqu29/aPRTvOE68=
 			</data>
 		</dict>
 		<key>Headers/FBLPromise+Do.h</key>
@@ -191,6 +374,17 @@
 			AbrMui/y3jBRVXloC2ek4ZcwpBQPlqu29/aPRTvOE68=
 			</data>
 		</dict>
+		<key>Headers/FBLPromise+Race 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KhU7Y/hu/++OhV8HrTR0blCqsa8=
+			</data>
+			<key>hash2</key>
+			<data>
+			CNuTRimQ0rZFNUumwP/hYOqi204+JbffrEkONBFuIVg=
+			</data>
+		</dict>
 		<key>Headers/FBLPromise+Race.h</key>
 		<dict>
 			<key>hash</key>
@@ -200,6 +394,17 @@
 			<key>hash2</key>
 			<data>
 			CNuTRimQ0rZFNUumwP/hYOqi204+JbffrEkONBFuIVg=
+			</data>
+		</dict>
+		<key>Headers/FBLPromise+Recover 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bQIMfszj33smHtitYuadQj5unrM=
+			</data>
+			<key>hash2</key>
+			<data>
+			WP2VmkMLEJh9pP+sW2pW5945/IEIEhib/7rGfCaIWQQ=
 			</data>
 		</dict>
 		<key>Headers/FBLPromise+Recover.h</key>
@@ -213,6 +418,17 @@
 			WP2VmkMLEJh9pP+sW2pW5945/IEIEhib/7rGfCaIWQQ=
 			</data>
 		</dict>
+		<key>Headers/FBLPromise+Reduce 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fHvVgIVNfukW8aWkuQb9Upl1Hv8=
+			</data>
+			<key>hash2</key>
+			<data>
+			OVoK729ybsf8EX8DRwCRRidRbTPXhRiHZjV4Kn40EtE=
+			</data>
+		</dict>
 		<key>Headers/FBLPromise+Reduce.h</key>
 		<dict>
 			<key>hash</key>
@@ -222,6 +438,17 @@
 			<key>hash2</key>
 			<data>
 			OVoK729ybsf8EX8DRwCRRidRbTPXhRiHZjV4Kn40EtE=
+			</data>
+		</dict>
+		<key>Headers/FBLPromise+Retry 3.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yWcTgblFfFp1WTKDOiSPZ5jDxNQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			Va6IWZOaB2Gi/utF/TdEGwXYqFYHunwUXo4DNOCGyuc=
 			</data>
 		</dict>
 		<key>Headers/FBLPromise+Retry.h</key>
@@ -235,6 +462,17 @@
 			Va6IWZOaB2Gi/utF/TdEGwXYqFYHunwUXo4DNOCGyuc=
 			</data>
 		</dict>
+		<key>Headers/FBLPromise+Testing 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ks+FXD691hFVSvDw/g/0x4ic7+0=
+			</data>
+			<key>hash2</key>
+			<data>
+			fEVZv1dfYDKHOKyiZqgdyhYdURZ0tKWsHGVPIQL70f0=
+			</data>
+		</dict>
 		<key>Headers/FBLPromise+Testing.h</key>
 		<dict>
 			<key>hash</key>
@@ -244,6 +482,17 @@
 			<key>hash2</key>
 			<data>
 			fEVZv1dfYDKHOKyiZqgdyhYdURZ0tKWsHGVPIQL70f0=
+			</data>
+		</dict>
+		<key>Headers/FBLPromise+Then 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xXwhWUcFcLdpUBrK28dob5PeMRI=
+			</data>
+			<key>hash2</key>
+			<data>
+			QMH7kzRIHfHY/An28iUioHxCvP1dvpEJ4Giffps6eBI=
 			</data>
 		</dict>
 		<key>Headers/FBLPromise+Then.h</key>
@@ -257,6 +506,17 @@
 			QMH7kzRIHfHY/An28iUioHxCvP1dvpEJ4Giffps6eBI=
 			</data>
 		</dict>
+		<key>Headers/FBLPromise+Timeout 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yngMore1DA762uLfNvM0zRhL/u0=
+			</data>
+			<key>hash2</key>
+			<data>
+			NoaGHny9bLEcgwjjW5UQxZBayRPcQORpW7WJdxa8iDg=
+			</data>
+		</dict>
 		<key>Headers/FBLPromise+Timeout.h</key>
 		<dict>
 			<key>hash</key>
@@ -268,6 +528,17 @@
 			NoaGHny9bLEcgwjjW5UQxZBayRPcQORpW7WJdxa8iDg=
 			</data>
 		</dict>
+		<key>Headers/FBLPromise+Validate 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QXCa+SPD+GyNt+fKriUFP4JLYi0=
+			</data>
+			<key>hash2</key>
+			<data>
+			c+8J+TGkNw0JZn+It/LBQP3DACatwAluOhLLNDPozMw=
+			</data>
+		</dict>
 		<key>Headers/FBLPromise+Validate.h</key>
 		<dict>
 			<key>hash</key>
@@ -277,6 +548,17 @@
 			<key>hash2</key>
 			<data>
 			c+8J+TGkNw0JZn+It/LBQP3DACatwAluOhLLNDPozMw=
+			</data>
+		</dict>
+		<key>Headers/FBLPromise+Wrap 3.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pnbKEVv3KohF9zBVmwpY92K1/H8=
+			</data>
+			<key>hash2</key>
+			<data>
+			m576DCvDiDcYotjxumxrhOVOJ8XyUnJcIM7qlVvq2nQ=
 			</data>
 		</dict>
 		<key>Headers/FBLPromise+Wrap.h</key>
@@ -301,6 +583,17 @@
 			MD1VrgE/xaO9Oy+HbINsjj3NdgjHGD0vqLUkZ9TEkgQ=
 			</data>
 		</dict>
+		<key>Headers/FBLPromiseError 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NiD1rwNDO7Tz69bYyOj9qmlCGRQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			3LBDNhkSuyDE1LE8Kk9c19ytLxAw5ABQnJu7J4/1yk8=
+			</data>
+		</dict>
 		<key>Headers/FBLPromiseError.h</key>
 		<dict>
 			<key>hash</key>
@@ -310,6 +603,28 @@
 			<key>hash2</key>
 			<data>
 			3LBDNhkSuyDE1LE8Kk9c19ytLxAw5ABQnJu7J4/1yk8=
+			</data>
+		</dict>
+		<key>Headers/FBLPromisePrivate 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J7AOJnwCKzdcaI5lsMAhXoByoT0=
+			</data>
+			<key>hash2</key>
+			<data>
+			yTbxGjb54FkX0p6ayty7U27WUyoFPXE9uJnivUTlPv4=
+			</data>
+		</dict>
+		<key>Headers/FBLPromises 2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xmHnPqDlpJpUbAqgOJw5Da3418U=
+			</data>
+			<key>hash2</key>
+			<data>
+			wH9eWTsWL9EixsUdC7G1gbD8vY97El45adWrrpwvqM0=
 			</data>
 		</dict>
 		<key>Headers/FBLPromises.h</key>
