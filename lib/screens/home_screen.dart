@@ -6,6 +6,7 @@ import 'package:game_list/screens/addGame_screen.dart';
 import 'package:game_list/screens/game_class.dart';
 import 'package:game_list/screens/game_page.dart';
 import 'package:game_list/screens/signin_screen.dart';
+import 'package:game_list/widged_recycler/widged_reycler.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,28 +18,39 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
   MainList favedList1 = MainList();
+  late List<Widget> widgetOptions;
+  @override
+  // TODO: implement widget
+
   void changeIndex(int newIndex) {
     setState(() => _selectedIndex = newIndex);
   }
 
-  List<List<GameItem>> mainLists = [[], [], []];
+  List<GameItem> mainLists = [];
 
   update(favList) {
     MainList items = favList;
-    mainLists[0] = items.favList;
+    mainLists = items.favList;
+  }
+
+  void createListWidget() {
+    widgetOptions = <Widget>[
+      _buildMainList(),
+      profilePage(context, "tefdsf", ['1', '2', '3']),
+    ];
   }
 
   Widget _buildMainList() {
     update(favedList1);
     return ListView.builder(
-      itemCount: mainLists[_selectedIndex].length,
+      itemCount: mainLists.length,
       itemBuilder: (BuildContext content, int index) {
         return Container(
           color: Colors.grey,
           child: ListTile(
-              leading: mainLists[_selectedIndex][index].buildLeading(context),
-              title: mainLists[_selectedIndex][index].buildTitle(context),
-              subtitle: mainLists[_selectedIndex][index].buildSubtitle(context),
+              leading: mainLists[index].buildLeading(context),
+              title: mainLists[index].buildTitle(context),
+              subtitle: mainLists[index].buildSubtitle(context),
               trailing: Icon(Icons.chevron_right),
               onTap: () =>
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -51,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    createListWidget();
     return GestureDetector(
         onTap: () {
           FocusScopeNode currentFocus = FocusScope.of(context);
@@ -119,7 +132,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     )
                   ],
                 )),
-                body: _buildMainList(),
+                body: Center(
+                  child: widgetOptions.elementAt(_selectedIndex),
+                ),
                 bottomNavigationBar: _MyBottomNavigationBar(
                   updateIndex: changeIndex,
                   currentIndex: _selectedIndex,
@@ -142,10 +157,6 @@ class _MyBottomNavigationBar extends StatelessWidget {
         BottomNavigationBarItem(
           icon: Icon(Icons.person),
           label: 'Profile',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.newspaper),
-          label: 'News',
         )
       ],
       currentIndex: currentIndex,

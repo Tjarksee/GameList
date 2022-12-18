@@ -56,3 +56,45 @@ Container firebaseUIButton(BuildContext context, String title, Function onTap) {
     ),
   );
 }
+
+Widget profilePage(BuildContext context, String name, List<String> stats) {
+  double width;
+  double height;
+  if (MediaQuery.of(context).orientation == Orientation.portrait) {
+    width = MediaQuery.of(context).size.width;
+    height = MediaQuery.of(context).size.height - 193;
+  } else {
+    width = MediaQuery.of(context).size.width;
+    height = MediaQuery.of(context).size.height - 133;
+  }
+
+  return Container(
+      width: width,
+      height: height,
+      decoration: const BoxDecoration(
+          gradient: LinearGradient(colors: [
+        Color.fromARGB(249, 50, 48, 50),
+        Color.fromARGB(249, 108, 106, 108),
+        Color.fromARGB(249, 50, 48, 50)
+      ], begin: Alignment.bottomRight, end: Alignment.topLeft)),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Container(
+            color: Colors.amber,
+            width: width,
+            height: height * 1 / 3,
+          ),
+          Container(
+            color: Colors.red,
+            width: width,
+            height: height * 1 / 3,
+          ),
+          Container(
+            color: Colors.orange,
+            width: width,
+            height: height * 1 / 3,
+          ),
+        ],
+      ));
+}

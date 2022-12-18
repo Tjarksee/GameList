@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:game_list/api/post_requests.dart';
-import 'package:game_list/list/list_class.dart';
 import 'package:game_list/list/main_list.dart';
 import 'package:game_list/screens/add_game_list_screen.dart';
 import 'package:game_list/screens/game_class.dart';
