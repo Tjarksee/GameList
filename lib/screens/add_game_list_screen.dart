@@ -5,7 +5,6 @@ import 'package:game_list/list/main_list.dart';
 import 'package:game_list/screens/game_class.dart';
 import 'package:game_list/list/list_class.dart';
 import 'package:game_list/screens/game_page.dart';
-import 'package:game_list/screens/home_screen.dart';
 
 class AddGameListScreen extends StatefulWidget {
   final Future<List<GameInfo>> gameList;

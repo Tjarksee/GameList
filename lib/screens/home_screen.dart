@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:game_list/list/list_class.dart';
 import 'package:game_list/list/main_list.dart';
 import 'package:game_list/screens/addGame_screen.dart';
-import 'package:game_list/screens/game_class.dart';
 import 'package:game_list/screens/game_page.dart';
 import 'package:game_list/screens/signin_screen.dart';
 import 'package:game_list/widged_recycler/widged_reycler.dart';
@@ -20,8 +19,6 @@ class _HomeScreenState extends State<HomeScreen> {
   MainList favedList1 = MainList();
   late List<Widget> widgetOptions;
   @override
-  // TODO: implement widget
-
   void changeIndex(int newIndex) {
     setState(() => _selectedIndex = newIndex);
   }

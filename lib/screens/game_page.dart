@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class game_page extends StatelessWidget {
+  const game_page({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

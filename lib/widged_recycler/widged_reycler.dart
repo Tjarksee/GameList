@@ -1,4 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:game_list/screens/signin_screen.dart';
 
 TextField reusableTextField(String text, IconData icon, bool isPasswordType,
     TextEditingController controller) {
@@ -67,6 +69,7 @@ Widget profilePage(BuildContext context, String name, List<String> stats) {
     width = MediaQuery.of(context).size.width;
     height = MediaQuery.of(context).size.height - 133;
   }
+  double mainContainerHight = height * 1 / 3;
 
   return Container(
       width: width,
@@ -81,20 +84,138 @@ Widget profilePage(BuildContext context, String name, List<String> stats) {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
-            color: Colors.amber,
             width: width,
-            height: height * 1 / 3,
+            height: mainContainerHight,
+            child: Container(
+              alignment: Alignment.center,
+              child: Text(
+                name,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40,
+                ),
+              ),
+            ),
           ),
           Container(
-            color: Colors.red,
             width: width,
-            height: height * 1 / 3,
+            height: mainContainerHight,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  height: mainContainerHight,
+                  width: width / 3,
+                  decoration: BoxDecoration(
+                      border: Border(
+                          right: BorderSide(
+                    color: Colors.black,
+                    width: 3.0,
+                  ))),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        alignment: Alignment.center,
+                        height: mainContainerHight / 2,
+                        width: width / 3,
+                        child: Text(
+                          'Games Played',
+                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        ),
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        height: mainContainerHight / 2,
+                        width: width / 3,
+                        child: Text(
+                          '0',
+                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: mainContainerHight,
+                  width: width / 3,
+                  decoration: BoxDecoration(
+                      border: Border(
+                          right: BorderSide(
+                    color: Colors.black,
+                    width: 3.0,
+                  ))),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        alignment: Alignment.center,
+                        height: mainContainerHight / 2,
+                        width: width / 3,
+                        child: Text(
+                          'Games Finished',
+                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        ),
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        height: mainContainerHight / 2,
+                        width: width / 3,
+                        child: Text(
+                          '0',
+                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: mainContainerHight,
+                  width: width / 3,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        alignment: Alignment.center,
+                        height: mainContainerHight / 2,
+                        width: width / 3,
+                        child: Text(
+                          'Planed to Play',
+                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        ),
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        height: mainContainerHight / 2,
+                        width: width / 3,
+                        child: Text(
+                          '0',
+                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
           Container(
-            color: Colors.orange,
-            width: width,
-            height: height * 1 / 3,
-          ),
+              width: width,
+              height: mainContainerHight,
+              child: Container(
+                alignment: Alignment.center,
+                height: 1,
+                width: width,
+                child: firebaseUIButton(context, "logout", () {
+                  FirebaseAuth.instance.signOut().then((value) {
+                    print("Signed Out");
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SignInScreen()));
+                  });
+                }),
+              )),
         ],
       ));
 }
